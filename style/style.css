@@ -1,0 +1,34 @@
+
+/* mengatur elemen body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* mengatur elemen header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* mengatur elemen h1 pada elemen header */
+header h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* mengatur elemen section */
+section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.mb-3 form-check form-check-input{
+    padding-left: 20px;
+}

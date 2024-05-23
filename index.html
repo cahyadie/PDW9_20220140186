@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Adventure</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formSection">Form ikut</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section with Image -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Your Next Adventure Awaits!</h2>
+            <video src="assets/0522.mp4" autoplay loop width="100%" height="100%"></video>
+        </div>
+    </section>
+
+    <!-- New Section -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h3>Explore Our Adventure Packages</h3>
+            <p class="lead">Bukalah hatimu untuk dunia, langkahkan kakimu dengan berani, dan temukan keajaiban yang menanti dalam setiap petualangan. Alam semesta penuh dengan keindahan yang tak terhitung. Jelajahilah, rasakan kekuatannya, dan temukan kedamaian dalam setiap momen. Petualangan bukan hanya tentang menjelajah tempat baru, tapi juga tentang menjelajahi diri sendiri dan menemukan jati diri. Hidup ini singkat, jangan sia-siakan waktumu untuk hal yang biasa-biasa saja. Beranikan dirimu untuk melangkah keluar dari zona nyaman dan rasakan sensasi petualangan yang luar biasa. Setiap langkah yang kau ambil dalam petualangan adalah sebuah pembelajaran berharga. Teruslah belajar dan berkembang, dan ciptakan kenangan indah yang tak terlupakan. Yakinlah pada dirimu sendiri, hadapi setiap rintangan dengan penuh semangat, dan raihlah mimpi petualanganmu setinggi langit. Petualangan adalah guru terbaik. Dengarkan apa yang dia katakan, pelajari dari setiap pengalaman, dan temukan kebahagiaan sejati dalam perjalananmu. Dunia ini penuh dengan peluang. Jangan ragu untuk melangkah keluar, jelajahi setiap sudutnya, dan temukan harta karun yang tersembunyi. Berpetualanglah dengan hati yang terbuka dan pikiran yang lapang. Temukan inspirasi baru, ciptakan persahabatan, dan sebarkan kebaikan di setiap langkahmu. Ingatlah, petualangan bukan hanya tentang tujuan akhir, tapi juga tentang proses perjalanan itu sendiri. Nikmati setiap momen, rasakan sensasinya, dan ciptakan cerita petualanganmu yang tak terlupakan.</p>
+            <a href="#formSection" class="btn btn-light btn-lg mt-3">Ikut Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="formSection" class="py-5 bg-light">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title mb-4">Adventure Form</h1>
+                    <p class="card-text">Isi formulir di bawah ini untuk petualangan impian Anda!</p>
+                    <form class="row g-3">
+                        <div class="col-6">
+                          <label for="nama" class="form-label">Nama</label>
+                          <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" required>
+                        </div>                
+                        <div class="col-6">
+                            <label for="usia" class="form-label">Usia</label>
+                            <input type="number" class="form-control" id="usia" placeholder="masukkan usia" required>
+                        </div>
+                        
+                        <div class="col-6">
+                            <label for="tanggal" class="form-label">Tanggal</label>
+                            <input type="date" class="form-control" id="tanggal" placeholder="Pilih Tanggal" required>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="petualangan" class="form-label">petualangan</label>
+                            <select class="form-select" id="petualangan" required>
+                            <option selected>Pilih petualangan</option>
+                            <option value="Jelajahi hutan">Jelajahi hutan</option>
+                            <option value="Hiking">Hiking</option>
+                            <option value="Diving">Diving</option>
+                            <option value="Masuk Goa">Masuk Goa</option>
+                            <option value="Manjat Tebing">Manjat Tebing</option>
+                            <option value="Terjun payung">Terjun payung </option>
+                            </select>
+                        </div>
+
+
+                        </div>
+                        <div class="mb-3 form-check">
+                            <label class="form-check-label" for="agree" >ikut fixx</label>
+                            <input type="checkbox" class="form-check-input" id="agree" required>
+                        </div>
+                        
+                        <div class="btn">
+                            <button type="button" onclick="handleSubmission()" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-4 bg-dark text-white-50 text-center">
+        <div class="container">
+            <p>&copy; 2024 Adventure. All rights reserved.</p>
+            <p>Email: contact@adventure.com | Phone: +123 456 7890</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="/script/main.js"></script>
+</body>
+</html>
